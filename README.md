@@ -5,6 +5,13 @@ This project provides a modern dashboard to manage students, courses, attendance
 
 ---
 
+## 🚀 Live Demo
+
+👉 **Deployed Project:**
+https://college-management-system-buct.onrender.com
+
+---
+
 ## 🚀 Features
 
 * 🔐 User Authentication (Login / Logout / JWT Support)
@@ -51,7 +58,7 @@ gyan_uday/
 
 ## ⚙️ Installation & Setup
 
-### 2️⃣ Create virtual environment
+### 1️⃣ Create virtual environment
 
 ```
 python -m venv env
@@ -67,7 +74,7 @@ Activate it:
 
 ---
 
-### 3️⃣ Install dependencies
+### 2️⃣ Install dependencies
 
 ```
 pip install -r requirements.txt
@@ -75,7 +82,7 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Apply migrations
+### 3️⃣ Apply migrations
 
 ```
 python manage.py migrate
@@ -83,7 +90,7 @@ python manage.py migrate
 
 ---
 
-### 5️⃣ Create superuser
+### 4️⃣ Create superuser
 
 ```
 python manage.py createsuperuser
@@ -91,7 +98,7 @@ python manage.py createsuperuser
 
 ---
 
-### 6️⃣ Run server
+### 5️⃣ Run server
 
 ```
 python manage.py runserver
@@ -99,11 +106,12 @@ python manage.py runserver
 
 ---
 
-## 🌐 Access the Project
+## 🌐 Access the Project (Local)
 
 * Dashboard: http://127.0.0.1:8000/dashboard/
 * Admin Panel: http://127.0.0.1:8000/admin/
 
+---
 
 ## 💡 Future Improvements
 
@@ -113,6 +121,11 @@ python manage.py runserver
 * 📊 Export reports (PDF/Excel)
 * 👥 Role-based access (Admin / Student)
 
+---
 
+## 👨‍💻 Author
+
+**Amritanshu Shukla**
+B.Tech CSE (IoT) | Aspiring Software Developer
 
 ---
