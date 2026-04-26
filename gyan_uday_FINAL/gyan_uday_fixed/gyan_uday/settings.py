@@ -14,28 +14,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # ─────────────────────────────────────────────
 # SECURITY
 # ─────────────────────────────────────────────
+import os
+
 SECRET_KEY = os.environ.get(
     'SECRET_KEY',
     'django-insecure-gyanuday-change-this-in-production-2024'
 )
 
 # ✅ FIXED (production safe)
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+DEBUG = False
 
-# ✅ FIXED (Render + local)
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS')
+# ✅ FIXED (important for Render)
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '0.0.0.0',
+    'college-management-system-buct.onrender.com',
+]
 
-if ALLOWED_HOSTS:
-    ALLOWED_HOSTS = ALLOWED_HOSTS.split(',')
-else:
-    ALLOWED_HOSTS = [
-        'localhost',
-        '127.0.0.1',
-        '0.0.0.0',
-        'college-management-system-buct.onrender.com',  # ✅ your live domain
-    ]
-
-# ✅ FIXED (needed for Render HTTPS)
+# ✅ FIXED (needed for forms/login on HTTPS)
 CSRF_TRUSTED_ORIGINS = [
     'https://college-management-system-buct.onrender.com',
 ]
