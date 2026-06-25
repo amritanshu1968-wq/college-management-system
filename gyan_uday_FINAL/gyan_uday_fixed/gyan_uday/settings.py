@@ -21,7 +21,7 @@ SECRET_KEY = os.environ.get(
     'django-insecure-gyanuday-change-this-in-production-2024'
 )
 
-DEBUG = False
+DEBUG=True
 ALLOWED_HOSTS = os.environ.get(
     "ALLOWED_HOSTS",
     "localhost,127.0.0.1,0.0.0.0,college-management-system-1-cddn.onrender.com"
