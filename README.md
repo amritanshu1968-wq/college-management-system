@@ -249,10 +249,3 @@ This project is developed for educational and portfolio purposes.
 
 B.Tech Computer Science Engineering (IoT)
 
-Aspiring Software Developer | Django Developer | Python Enthusiast
-
-LinkedIn: *(Add your LinkedIn URL)*
-
-GitHub: *(Add your GitHub URL)*
-
-Email: *(Add your email address)*
