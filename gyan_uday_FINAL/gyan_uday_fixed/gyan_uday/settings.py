@@ -24,17 +24,13 @@ SECRET_KEY = os.environ.get(
 # ✅ FIXED (production safe)
 DEBUG = False
 
-# ✅ FIXED (important for Render)
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '0.0.0.0',
-    'college-management-system-buct.onrender.com',
-]
+ALLOWED_HOSTS = os.environ.get(
+    "ALLOWED_HOSTS",
+    "localhost,127.0.0.1,0.0.0.0,college-management-system-1-cddn.onrender.com"
+).split(",")
 
-# ✅ FIXED (needed for forms/login on HTTPS)
 CSRF_TRUSTED_ORIGINS = [
-    'https://college-management-system-buct.onrender.com',
+    "https://college-management-system-1-cddn.onrender.com",
 ]
 
 
